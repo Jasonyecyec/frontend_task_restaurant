@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OMAKASE - Sushi Restaurant</title>
     <link href="./src/css/output.css" rel="stylesheet" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- HEADER -->
@@ -38,15 +53,265 @@
     <section id="menu-list"></section>
 
     <!-- CUSTOMER REVIEW -->
-    <section id="customer-review"></section>
+    <section id="customer-review" class="bg-black">
+      <div class="py-20 overflow-hidden">
+        <!-- Section Heading -->
+        <div
+          class="relative z-30 flex flex-col items-center justify-center py-10 space-y-4 mb-10"
+        >
+          <div
+            class="absolute top-0 left-0 w-2/5 md:w-[45%] h-[1px] bg-white border opacity-40"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 w-2/5 md:w-[45%] h-[1px] bg-white border opacity-40"
+          ></div>
+
+          <div class="text-center space-y-2">
+            <p
+              class="text-md sm:text-lg font-outfit tracking-wider text-accent"
+            >
+              REVIEWS
+            </p>
+            <h2
+              class="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bebas text-white tracking-tighter"
+            >
+              OUR CUSTOMERS <span class="opacity-60">LOVE US</span>
+            </h2>
+          </div>
+        </div>
+
+        <!-- Review Cards Container -->
+        <div
+          id="review-container"
+          class="flex w-full p-5 sm:p-10 xl:p-0 space-y-5 md:space-y-0 xl:space-x-10 overflow-x-hidden flex-wrap xl:flex-nowrap scrollbar-hide"
+        >
+          <!-- Review Card 1 -->
+          <div
+            class="w-full xl:min-w-[632px] p-10 md:p-16 xl:p-20 bg-primaryBackground xl:opacity-60 snap-start text-white font-outfit space-y-5 tracking-tight"
+          >
+            <div class="relative">
+              <span
+                class="absolute top-[-2rem] sm:top-[-3rem] left-[-2rem] sm:left-[-3rem] text-6xl sm:text-9xl text-white opacity-20"
+                >“</span
+              >
+              <p class="text-3xl sm:text-4xl font-normal">
+                Exceptional Sushi and Service
+              </p>
+            </div>
+            <p class="text-base sm:text-lg font-light opacity-70">
+              "Dining at Omakase was an unforgettable experience. The chefs'
+              expertise shines through in each piece of sushi, from the
+              delicate."
+            </p>
+            <div class="flex justify-between">
+              <div class="text-lg sm:text-2xl text-accent">★★★★★</div>
+              <span class="text-md sm:text-lg font-normal text-white opacity-45"
+                >- David S.</span
+              >
+            </div>
+          </div>
+
+          <!-- Review Card 2 -->
+          <div
+            class="w-full xl:min-w-[632px] p-10 md:p-16 xl:p-20 bg-primaryBackground snap-start text-white font-outfit space-y-5 tracking-tight"
+          >
+            <div class="relative">
+              <span
+                class="absolute top-[-2rem] sm:top-[-3rem] left-[-2rem] sm:left-[-3rem] text-6xl sm:text-9xl text-white opacity-20"
+                >“</span
+              >
+              <p class="text-3xl sm:text-4xl font-normal">
+                A Truly Authentic Experience
+              </p>
+            </div>
+            <p class="text-base sm:text-lg font-light opacity-70">
+              "Omakase exceeded all my expectations. The attention to detail in
+              every dish was impeccable, and the flavors were simply
+              outstanding."
+            </p>
+            <div class="flex justify-between">
+              <div class="text-lg sm:text-2xl text-accent">★★★★★</div>
+              <span class="text-md sm:text-lg font-normal text-white opacity-45"
+                >- Emily R.</span
+              >
+            </div>
+          </div>
+
+          <!-- Review Card 3 -->
+          <div
+            class="w-full xl:min-w-[632px] p-10 md:p-16 xl:p-20 bg-primaryBackground xl:opacity-60 snap-start text-white font-outfit space-y-5 tracking-tight"
+          >
+            <div class="relative">
+              <span
+                class="absolute top-[-2rem] sm:top-[-3rem] left-[-2rem] sm:left-[-3rem] text-6xl sm:text-9xl text-white opacity-20"
+                >“</span
+              >
+              <p class="text-3xl sm:text-4xl font-normal">
+                Exceptional Sushi and Service
+              </p>
+            </div>
+            <p class="text-base sm:text-lg font-light opacity-70">
+              "Dining at Omakase was an unforgettable experience. The chefs'
+              expertise shines through in each piece of sushi, from the
+              delicate."
+            </p>
+            <div class="flex justify-between">
+              <div class="text-lg sm:text-2xl text-accent">★★★★★</div>
+              <span class="text-md sm:text-lg font-normal text-white opacity-45"
+                >- Emily R.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- CONTACT/RESERVATION -->
-    <section id="contact"></section>
+    <section id="contact" class="relative bg-black">
+      <!-- GRADIENT BACKGROUND -->
+      <div
+        class="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-[90%] bg-gradient-to-b from-black via-[#D9D9D9] opacity-70 to-black z-10"
+      ></div>
+
+      <div class="relative bg-black pb-8 md:pb-32">
+        <div
+          class="relative z-30 flex flex-col items-center justify-center py-10 space-y-4 mb-6 md:mb-10"
+        >
+          <div
+            class="absolute top-0 left-0 w-2/5 md:w-[45%] h-[1px] bg-white border-[1px] opacity-40"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 w-2/5 md:w-[45%] h-[1px] bg-white border-[1px] opacity-40"
+          ></div>
+
+          <div class="text-center space-y-2">
+            <p
+              class="text-accent font-outfit tracking-wider text-base md:text-lg"
+            >
+              CONTACT US
+            </p>
+            <h2
+              class="font-bebas text-5xl md:text-7xl text-white tracking-tighter"
+            >
+              RESERVE NOW
+            </h2>
+          </div>
+        </div>
+
+        <!-- Centered Container -->
+        <div
+          class="container relative z-30 mx-auto flex flex-col md:flex-row max-w-6xl px-4 md:px-0 rounded-lg font-outfit"
+        >
+          <div
+            class="flex-1 bg-primaryBackground p-6 md:p-16 text-white space-y-4 md:space-y-6"
+          >
+            <p class="text-2xl md:text-4xl tracking-tight">Contact Us</p>
+
+            <div class="text-base md:text-lg">
+              <div
+                class="border-b border-contact-border py-6 md:py-8 tracking-tight"
+              >
+                <p class="font-normal">Phone</p>
+                <p class="font-light text-white opacity-70">+23 344 342</p>
+              </div>
+
+              <div class="border-b border-contact-border py-6 md:py-8">
+                <p class="font-normal">Email</p>
+                <p class="font-light text-white opacity-70">
+                  sushisusantee@mail.com
+                </p>
+              </div>
+
+              <div class="border-b border-contact-border py-6 md:py-8">
+                <p class="font-normal">Address</p>
+                <p class="font-light text-white opacity-70">
+                  44 Blue Spring, Arizona, Djogjakarta, VA 234145
+                </p>
+              </div>
+
+              <div class="border-b border-contact-border py-6 md:py-8">
+                <p class="font-normal">Opening Hours</p>
+                <p class="font-light text-white opacity-70">
+                  Sunday - Saturday 10am - 10pm
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-1 bg-black p-6 md:p-16 text-white space-y-4">
+            <p class="text-2xl md:text-4xl tracking-tight">Reserve Now</p>
+
+            <form>
+              <div class="text-base md:text-lg">
+                <div class="pt-4 md:pt-5 tracking-tight">
+                  <label for="first_name" class="block font-normal text-white"
+                    >First name</label
+                  >
+                  <input
+                    type="text"
+                    id="first_name"
+                    class="w-full bg-transparent border-b border-reserve-border pb-3 md:pb-5 text-white opacity-70 focus:outline-none focus:ring-0 placeholder-opacity-70"
+                    placeholder="Enter your first name"
+                    required
+                  />
+                </div>
+
+                <div class="pt-4 md:pt-5 tracking-tight">
+                  <label for="last_name" class="block font-normal text-white"
+                    >Last name</label
+                  >
+                  <input
+                    type="text"
+                    id="last_name"
+                    class="w-full bg-transparent border-b border-reserve-border pb-3 md:pb-5 text-white opacity-70 focus:outline-none focus:ring-0 placeholder-opacity-70"
+                    placeholder="Enter your last name"
+                    required
+                  />
+                </div>
+
+                <div class="pt-4 md:pt-5 tracking-tight">
+                  <label for="date_time" class="block font-normal text-white"
+                    >Date and Time</label
+                  >
+                  <input
+                    type="datetime-local"
+                    id="date_time"
+                    class="w-full bg-transparent border-b border-reserve-border pb-3 md:pb-5 text-white opacity-70 focus:outline-none focus:ring-0 placeholder-opacity-70"
+                    required
+                  />
+                </div>
+
+                <div class="pt-4 md:pt-5 tracking-tight">
+                  <label for="notes" class="block font-normal text-white"
+                    >Notes</label
+                  >
+                  <textarea
+                    id="notes"
+                    class="w-full bg-transparent border-b border-reserve-border pb-3 md:pb-5 text-white opacity-70 focus:outline-none focus:ring-0 placeholder-opacity-70 resize-none"
+                    placeholder="Enter your messages here"
+                    rows="2"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="flex justify-end mt-6 md:mt-7">
+                  <button
+                    class="font-outfit tracking-widest text-black py-2 px-4 md:px-6 bg-white hover:bg-accent hover:text-white transition-colors"
+                  >
+                    NEXT
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <footer
       id="footer"
-      class="bg-primaryBackground px-4 sm:px-6 md:px-8 lg:px-[80px] text-white tracking-widest font-medium"
+      class="bg-primaryBackground px-4 sm:px-6 md:px-8 lg:px-[80px] text-white tracking-widest font-medium font-outfit"
     >
       <div
         class="container mx-auto flex flex-col md:flex-row justify-between items-center py-10 md:h-[218px] space-y-6 md:space-y-0"
@@ -66,19 +331,19 @@
             class="flex flex-wrap items-center justify-center space-x-4 sm:space-x-6 md:space-x-10"
           >
             <li>
-              <a href="#about" class="hover:text-primary transition-colors"
+              <a href="#about" class="hover:text-accent transition-colors"
                 >ABOUT</a
               >
             </li>
             <li>
               <a
                 href="#menu-overview"
-                class="hover:text-primary transition-colors"
+                class="hover:text-accent transition-colors"
                 >MENU</a
               >
             </li>
             <li>
-              <a href="#contact" class="hover:text-primary transition-colors"
+              <a href="#contact" class="hover:text-accent transition-colors"
                 >CONTACT</a
               >
             </li>
@@ -90,12 +355,15 @@
         >
           <span class="whitespace-nowrap">+23 344 434</span>
           <button
-            class="px-6 py-3 bg-[#FFFFFF1A] whitespace-nowrap hover:bg-primary transition-colors"
+            class="px-6 py-3 bg-[#FFFFFF1A] whitespace-nowrap hover:bg-accent transition-colors"
           >
             BOOK A TABLE
           </button>
         </div>
       </div>
     </footer>
+
+    <!-- SCRIPTS -->
+    <script src="src/scripts/script.js"></script>
   </body>
 </html>
