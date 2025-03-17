@@ -12,10 +12,22 @@ module.exports = {
       },
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
+        bebas: ["BebasKai", "sans-serif"],
       },
       colors: {
-        primary: "#FF0000", // Red for buttons like "BOOK A TABLE"
-        primaryBackground: "#1A1A1A", // White for text
+        primary: "#FF0000",
+        accent: "#DD2B2B",
+        primaryBackground: "#1A1A1A",
+      },
+
+      borderColor: {
+        "contact-border": "rgba(255, 255, 255, 0.09)",
+        "reserve-border": "rgba(255, 255, 255, 0.20)",
+      },
+
+      backgroundImage: {
+        "contact-gradient":
+          "linear-gradient(180deg, rgba(217, 217, 217, 0.7) 0%, #A5A5A5 28.76%, #737373 65.71%, #737373 77.66%, rgba(115, 115, 115, 0.7) 100%)",
       },
     },
   },
