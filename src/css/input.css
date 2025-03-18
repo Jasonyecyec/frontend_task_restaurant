@@ -8,3 +8,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@layer utilities {
+  .menu-list-border {
+    border: 1px solid transparent;
+    border-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0)
+      )
+      1;
+  }
+}
