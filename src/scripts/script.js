@@ -1,11 +1,30 @@
 document.addEventListener("DOMContentLoaded", updateDateTimeInput);
-document
-  .getElementById("date_time")
-  .addEventListener("focus", updateDateTimeInput);
+document.getElementById("date_time").addEventListener("focus", updateDateTimeInput);
 
 const reviewContainer = document.getElementById("review-container");
 
-// Function to adjust scrollLeft based on screen width
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+const reserveForm = document.getElementById("reserve-form");
+
+reserveForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const inputs = reserveForm.querySelectorAll("input");
+
+  inputs.forEach((input) => {
+    const inputValue = input.value.trim();
+
+    const errorMessage = input.previousElementSibling.querySelector(".error-message");
+
+    if (!inputValue) {
+      errorMessage.classList.remove("hidden");
+    } else {
+      errorMessage.classList.add("hidden");
+    }
+  });
+});
+
 function adjustScrollPosition() {
   if (window.matchMedia("(min-width: 1280px)").matches) {
     // Desktop (xl and above)
@@ -26,9 +45,6 @@ function updateDateTimeInput() {
   dateTimeInput.value = formattedDateTime;
   dateTimeInput.min = formattedDateTime;
 }
-
-const menuToggle = document.getElementById("menu-toggle");
-const mobileMenu = document.getElementById("mobile-menu");
 
 menuToggle.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
