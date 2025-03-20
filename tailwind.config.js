@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
         bebas: ["BebasKai", "sans-serif"],
+        interDisplay: ["InterDisplay", "sans-serif"],
       },
       colors: {
         primary: "#FF0000",
